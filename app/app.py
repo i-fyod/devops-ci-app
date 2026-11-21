@@ -13,4 +13,4 @@ def index():
 @app.get('/health')
 def health():
     """Expose the health contract checked by tests and smoke-test."""
-    return jsonify(status='ok')
+    return jsonify(status='degraded')
